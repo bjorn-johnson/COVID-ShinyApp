@@ -29,4 +29,5 @@ COVID_df <- COVID_data %>%
   #filter(Most_Recent_Date == 'Most_Recent') %>% 
   dplyr::select(date_COVID,state,positive,negative,pending,hospitalized,death,total,Most_Recent_Date,Data_asof)
 
+#change location to desired path
 fwrite(COVID_df,"C:/Users/bjorn.o.johnson/Documents/R_Task_Scheduler/COVID/data/COVID_DATA.csv")
